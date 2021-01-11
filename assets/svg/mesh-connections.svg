@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 124">
+<defs>
+<style>g#mesh path, g#base path{opacity: 0} .cls-blue{fill:#1f91cc;}.cls-blue,.cls-gray,.cls-default{stroke:#454a54;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}.cls-gray{fill:#454a54;}.cls-default{fill:none;}</style>
+</defs>
+<g id="base" data-name="first_layer">
+<path class="cls-blue" d="M66.42,77.77l14.41,7.48L96.9,82.83,82.48,75.35Z"/>
+<path class="cls-blue" d="M47.58,74.63l-2.67,16,7.27,14.53,2.66-16Z"/>
+<path class="cls-gray" d="M31.51,77.05,17.09,69.57l-2.66,16,14.42,7.48Z"/>
+<path class="cls-blue" d="M44.73,55.75l14.42,7.48,2.66-16L47.39,39.72Z"/>
+<path class="cls-gray" d="M73.39,35.81l16.06-2.42L82.19,18.86,66.12,21.28Z"/>
+<path class="cls-blue" d="M37.47,41.22l2.66-16L24.07,27.61l-2.67,16Z"/>
+</g>
+<g id="mesh" data-name="mesh_layer">
+<path class="cls-default" d="M63.75,93.79l-11.57,11.4,14.42,7.49,11.57-11.4Z"/>
+<path class="cls-default" d="M78.17,101.28,66.6,112.68l16.06-2.42,11.58-11.4Z"/>
+<path class="cls-default" d="M54.84,89.17l-2.66,16,11.57-11.4,2.67-16Z"/>
+<path class="cls-default" d="M54.84,89.17l11.58-11.4L59.15,63.23,47.58,74.63Z"/>
+<path class="cls-default" d="M80.83,85.25,66.42,77.77l-2.67,16,14.42,7.49Z"/>
+<path class="cls-default" d="M82.48,75.35,96.9,82.83,89.63,68.3,75.21,60.82Z"/>
+<path class="cls-default" d="M101.21,56.9,89.63,68.3,96.9,82.83l11.57-11.4Z"/>
+<path class="cls-default" d="M82.48,75.35,75.21,60.82,59.15,63.23l7.27,14.54Z"/>
+<path class="cls-default" d="M86.79,49.42,75.21,60.82,89.63,68.3l11.58-11.4Z"/>
+<path class="cls-default" d="M78.17,101.28l16.07-2.42,2.66-16L80.83,85.25Z"/>
+<path class="cls-default" d="M108.47,71.43,124.54,69l-7.27-14.53L101.21,56.9Z"/>
+<path class="cls-default" d="M124.54,69l-16.07,2.42L96.9,82.83,113,80.41Z"/>
+<path class="cls-default" d="M28.85,93.08l7.26,14.53,16.07-2.42L44.91,90.66Z"/>
+<path class="cls-default" d="M14.43,85.6l7.27,14.53,14.41,7.48L28.85,93.08Z"/>
+<path class="cls-default" d="M28.85,93.08l16.06-2.42,2.67-16L31.51,77.05Z"/>
+<path class="cls-default" d="M33.16,67.15,17.09,69.57l14.42,7.48,16.07-2.42Z"/>
+<path class="cls-default" d="M33.16,67.15l14.42,7.48,11.57-11.4L44.73,55.75Z"/>
+<path class="cls-default" d="M66.12,21.28,51.7,13.79,40.13,25.19l14.42,7.49Z"/>
+<path class="cls-default" d="M82.19,18.86,67.77,11.37,51.7,13.79l14.42,7.49Z"/>
+<path class="cls-default" d="M61.81,47.21,54.55,32.68,40.13,25.19l7.26,14.53Z"/>
+<path class="cls-default" d="M66.12,21.28,54.55,32.68l7.26,14.53,11.58-11.4Z"/>
+<path class="cls-default" d="M75.21,60.82l11.58-11.4,2.66-16L77.88,44.79Z"/>
+<path class="cls-default" d="M103.87,40.87,89.45,33.39l-2.66,16,14.42,7.48Z"/>
+<path class="cls-default" d="M61.81,47.21l-2.66,16,16.06-2.41,2.67-16Z"/>
+<path class="cls-default" d="M77.88,44.79l11.57-11.4L73.39,35.81,61.81,47.21Z"/>
+<path class="cls-default" d="M101.21,56.9l16.06-2.42,2.67-16-16.07,2.41Z"/>
+<path class="cls-default" d="M105.52,31,89.45,33.39l14.42,7.48,16.07-2.41Z"/>
+<path class="cls-default" d="M21.4,43.64l2.67-16L12.49,39,9.83,55Z"/>
+<path class="cls-default" d="M47.39,39.72,40.13,25.19l-2.66,16,7.26,14.53Z"/>
+<path class="cls-default" d="M28.67,58.17l16.06-2.42L37.47,41.22,21.4,43.64Z"/>
+<path class="cls-default" d="M21.4,43.64,9.83,55l7.26,14.53,11.58-11.4Z"/>
+<path class="cls-default" d="M44.73,55.75,28.67,58.17,17.09,69.57l16.07-2.42Z"/>
+</g>
+</svg>

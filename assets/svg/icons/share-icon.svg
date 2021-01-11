@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 124">
+    <defs>
+        <style>
+            .share-icon-cls1,
+            .share-icon-cls2,
+            .share-icon-clstransferline {
+                fill: none;
+            }
+
+            .share-icon-cls1 {
+                stroke: #ccc;
+            }
+
+            .share-icon-cls1,
+            .share-icon-cls2,
+            .share-icon-clsdark-square,
+            .cls-transferline {
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+
+            .share-icon-cls1,
+            .share-icon-cls2,
+            .share-icon-clsdark-square {
+                stroke-width: 1.74px;
+            }
+
+            .share-icon-cls2,
+            .share-icon-clsdark-square {
+                stroke: #454a54;
+            }
+
+            .share-icon-clsdark-square {
+                fill: #454a54;
+            }
+
+            .cls-transferline {
+                stroke: #da4c43;
+                stroke-width: 1.87px;
+            }
+        </style>
+    </defs>
+    <g id="Layer_4" data-name="Layer 4">
+        <path class="share-icon-cls1" d="M48.68,76.1,48.3,92.35l9.24,13.36.38-16.24Z" />
+        <path class="share-icon-cls1" d="M33.12,80.76,17.79,75.39l-.38,16.24L32.74,97Z" />
+        <path class="share-icon-cls1" d="M43.2,57.81l15.33,5.38L58.91,47,43.58,41.57Z" />
+        <path class="share-icon-cls1" d="M34,44.45l.38-16.24L18.78,32.87,18.4,49.11Z" />
+        <path class="share-icon-cls1" d="M67.39,92.79l-9.85,12.92,15.33,5.38,9.85-12.92Z" />
+        <path class="share-icon-cls1" d="M57.92,89.47l-.38,16.24,9.85-12.92.38-16.24Z" />
+        <path class="share-icon-cls1" d="M57.92,89.47l9.85-12.92L58.53,63.19,48.68,76.1Z" />
+        <path class="share-icon-cls1" d="M83.1,81.93,67.77,76.55l-.38,16.24,15.33,5.38Z" />
+        <path class="share-icon-cls1" d="M84,45.61,74.09,58.53l15.33,5.38L99.28,51Z" />
+        <path class="share-icon-cls1" d="M32.74,97,48.3,92.35l.38-16.25L33.12,80.76Z" />
+        <path class="share-icon-cls1" d="M33.35,70.73,17.79,75.39l15.33,5.37L48.68,76.1Z" />
+        <path class="share-icon-cls1" d="M33.35,70.73,48.68,76.1l9.85-12.91L43.2,57.81Z" />
+        <path class="share-icon-cls1" d="M59.52,20.67,49.67,33.58,58.91,47,68.76,34Z" />
+        <path class="share-icon-cls1" d="M74.09,58.53,84,45.61l.37-16.24L74.47,42.29Z" />
+        <path class="share-icon-cls1" d="M43.58,41.57,34.34,28.21,34,44.45,43.2,57.81Z" />
+        <path class="share-icon-cls1" d="M27.64,62.47,43.2,57.81,34,44.45,18.4,49.11Z" />
+        <path class="share-icon-cls1" d="M43.2,57.81,27.64,62.47,17.79,75.39l15.56-4.66Z" />
+        <path class="share-icon-cls1" d="M83.33,71.89l15.33,5.38L89.42,63.91,74.09,58.53Z" />
+        <path class="share-icon-cls1" d="M99.28,51,89.42,63.91l9.24,13.36,9.86-12.92Z" />
+        <path class="share-icon-cls2" d="M83.33,71.89,74.09,58.53,58.53,63.19l9.24,13.36Z" />
+        <path class="share-icon-cls1" d="M59.52,20.67,44.19,15.29,34.34,28.21l15.33,5.37Z" />
+        <path class="share-icon-cls1" d="M58.91,47,49.67,33.58,34.34,28.21l9.24,13.36Z" />
+        <path class="share-icon-cls2" d="M58.91,47l-.38,16.24,15.56-4.66.38-16.24Z" />
+        <path class="share-icon-cls2" d="M74.47,42.29l9.85-12.92L68.76,34,58.91,47Z" />
+        <path class="share-icon-cls2" d="M68.76,34l15.56-4.66L75.08,16,59.52,20.67Z" />
+        <path class="share-icon-clsdark-square" d="M75.08,16,59.75,10.63,44.19,15.29l15.33,5.38Z" />
+        <path class="share-icon-cls2" d="M67.77,76.55,83.1,81.93l15.56-4.66L83.33,71.89Z" />
+        <path class="share-icon-clsdark-square" d="M82.72,98.17l-9.85,12.92,15.56-4.66,9.86-12.92Z" />
+        <path class="share-icon-cls2" d="M82.72,98.17l15.57-4.66.37-16.24L83.1,81.93Z" />
+        <polygon class="cls-transferline"
+            points="83.33 71.89 74.09 58.53 74.47 42.29 84.32 29.37 75.08 16.01 59.52 20.67 68.76 34.03 58.91 46.95 58.53 63.19 67.77 76.55 83.1 81.93 82.72 98.17 98.29 93.51 98.66 77.27 83.33 71.89" />
+    </g>
+</svg>
