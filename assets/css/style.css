@@ -51,7 +51,6 @@ section h2 {
 
 
 .hero-text h1 {
-    color: #1F91CC;
     font-size: 1.7em;
     background-color: rgba(255, 255, 255, 0.9);
     margin: 10px 0px;
@@ -91,7 +90,8 @@ section h2 {
 #about,
 #features,
 #services,
-#develop {
+#status,
+#community {
     min-height: 50vh;
     border-top: 2px solid #ecf0f1;
     background-color: white;
@@ -105,24 +105,16 @@ section h2 {
 
 }
 
-#develop {
-    background-image: url('../svg/blue-abstract-bg.svg');
+#community {
+    background-image: url('../svg/grey-abstract-bg-left.svg');
     background-position: top left;
-    background-size: 30%;
+    background-size: 40%;
     background-repeat: no-repeat;
 
 }
 
 #services .col-md-2 img {
     width: 70%;
-}
-
-#develop {
-    background-color: #1F91CC;
-}
-
-#develop h2 {
-    color: white;
 }
 
 #about h3,
