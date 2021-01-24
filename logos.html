@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>ScienceMesh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/images/favico.ico">
+    <meta name="title" content="ScienceMesh">
+    <meta name="description"
+        content="ScienceMesh is a rich ecosystem for frictionless scientific collaboration and access to research services.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sciencemesh.io">
+    <meta property="og:title" content="ScienceMesh">
+    <meta property="og:description"
+        content="ScienceMesh is a rich ecosystem for frictionless scientific collaboration and access to research services.">
+    <meta property="og:image" content="assets/images/seo-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sciencemesh.io">
+    <meta property="twitter:title" content="ScienceMesh">
+    <meta property="twitter:description"
+        content="ScienceMesh is a rich ecosystem for frictionless scientific collaboration and access to research services.">
+    <meta property="twitter:image" content="assets/images/seo-image.png">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/vve2cqc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+        integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw=="
+        crossorigin="anonymous" />
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <a href="/"><div class="logo"></div></a>
+            </div>
+        </div>
+    </div>
+
+    <section style="margin-top: 100px;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>
+                        The logo represents a <span class="bold-text">Science<span class="blue-text">Mesh</span>, and
+                            just like a real-life environment, can be composed in many different ways.
+                    </h1>
+                    <p>
+                        Find here sets of automatically generated meshes, every time you visit, another set of meshed
+                        will be available to you.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="logo-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <center>
+                        <div class="footer-logo"></div>
+                    </center>
+                </div>
+
+                <div class="col-md-offset-1"></div>
+
+                <div class="col-md-3 col-xs-12">
+                </div>
+
+                <div class="footer-resource-links col-md-3 col-xs-12">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/sciencemesh/sciencemesh" target="_new">Github</a></li>
+                        <li><a href="https://gitter.im/sciencemesh/community" target="_new">Gitter</a></li>
+                        <li><a href="https://developer.sciencemesh.io/docs/" target="_new">Documentation</a></li>
+                        <li><a href="https://developer.sciencemesh.io/docs/iop/deployment/" target="_new">Deploy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 center-align">
+                    <p><a href="https://cs3mesh4eosc.eu/" target="_new">CS3MESH4EOSC</a> has received funding from the
+                        European Union's Horizon 2020 research and innovation programme under the Grant Agreement no
+                        863353
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="logo-template">
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js"
+    integrity="sha512-C2RveGuPIWqkaLAluvoxyiaN1XYNe5ss11urhZWZYBUA9Ydgj+hfGKPcxCzTwut1/fmjEZR7Ac35f2aycT8Ogw=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+    integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+    crossorigin="anonymous"></script>
+<script src="assets/js/sciencemesh-logo-generator.js" type="text/javascript"></script>
+<script type="text/javascript">
+    scienceMeshLogo.generate(100);
+</script>
+
+<script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "@type": "EducationalOrganization",
+      "name": "ScienceMesh",
+      "logo": "https://raw.githubusercontent.com/sciencemesh/sciencemesh-web/main/docs/logos/logo.png",
+      "image": "ScienceMesh is a rich ecosystem for frictionless scientific collaboration and access to research services.",
+      "description": "ScienceMesh is a rich ecosystem for frictionless scientific collaboration and access to research services."
+    }
+    </script>
+
+</html>
