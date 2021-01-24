@@ -1,5 +1,5 @@
 var scienceMesh = (function () {
-    // Provides functions to create 
+     
     var svg;
     var colourToType = { "#1F91CC": "applications", "#454A54": "data", "#bdc3c7": "compute", "#FFFFFF": "tile" };
     var colours = Object.keys(colourToType);
@@ -43,7 +43,6 @@ var scienceMesh = (function () {
         }
     }
 
-
     window.addEventListener("resize", function () {
         rtime = new Date();
         if (timeout === false) {
@@ -75,7 +74,7 @@ var scienceMesh = (function () {
         
         if(reload) {
             d3.xml(toLoad)
-                .then(data => {
+                .then(function(data) {
                     var container = d3.select("#sciencemesh");
                     container.select('svg').remove();
                     container.node().append(data.documentElement);
@@ -148,8 +147,6 @@ var scienceMesh = (function () {
                         .style('opacity', 1);
 
                     d3.select('#across-domain-text').transition().delay(9500).duration(1000).style('opacity', 1);
-
-
                 });
         }
     }
@@ -159,43 +156,25 @@ var scienceMesh = (function () {
 
             loadBackground();
             d3.xml("assets/svg/icons/editing.svg")
-                .then(data => {
+                .then(function(data) {
                     var container = d3.select("#editing-image");
                     container.node().append(data.documentElement);
                 });
 
             d3.xml("assets/svg/icons/remote-analysis.svg")
-                .then(data => {
+                .then(function(data) {
                     var container = d3.select("#remote-analysis-image");
                     container.node().append(data.documentElement);
                 });
 
             d3.xml("assets/svg/icons/share-between-services.svg")
-                .then(data => {
+                .then(function(data) {
                     var container = d3.select("#share-between-services-image");
                     container.node().append(data.documentElement);
-
-                    // container.selectAll('svg g#base path').transition().duration(2000).delay(500).style('opacity', 1);
                 });
 
-            // document.addEventListener('scroll', function () {
-
-            //     var aboutImageElement = d3.select("#about-image");
-            //     const aboutInView = isElementInViewport(aboutImageElement.node());
-            //     if (aboutInView & !aboutTransitionCompleted) {
-            //         aboutImageElement.select("svg").selectAll('g#mesh path').transition().duration(1000).delay(function (d, i) {
-            //             return 1000 + (i * 250);
-            //         }).style('opacity', 1);
-
-            //         aboutTransitionCompleted = true;
-            //     }
-
-            // }, {
-            //     passive: true
-            // });
-
             d3.xml("assets/svg/icons/share-icon.svg")
-                .then(data => {
+                .then(function(data){
                     var container = d3.select("#transfer-image");
                     container.node().append(data.documentElement);
                 });

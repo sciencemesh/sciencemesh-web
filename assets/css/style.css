@@ -372,3 +372,42 @@ polygon.cls-transferline {
         z-index: 100;
     }
 }
+
+#logo-template {
+    display: none;
+}
+
+#logo-container {
+    padding-top: 40px;
+}
+
+.generated-logo { 
+    width: 150px;
+    min-height: 135px;
+    display: inline-block;
+    border-radius: 5px;
+    
+    text-align: center;
+    float: left;
+    padding: 20px;
+}
+
+.generated-logo:hover {
+    background-color: rgba(244, 244, 244, 0.9);
+}
+
+.btn-download {
+    background-color: #e6e6e6;
+    font-weight: bolder;
+    padding: 4px 7px;
+    font-size: .7em;
+    margin: 5px;
+    position: relative;
+    bottom: 0;
+}
+
+.btn-download:hover {
+    transition: all 0.5s;
+    color: #1F91CC;
+    cursor: pointer;
+}
