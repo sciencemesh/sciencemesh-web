@@ -15,11 +15,11 @@ var scienceMesh = (function () {
 
     var getColour = function () {
         var seed = Math.random();
-        if (seed < 0.1) {
+        if (seed < 0.05) {
             return colours[0];
-        } else if (seed < 0.2) {
+        } else if (seed < 0.1) {
             return colours[1];
-        } else if (seed < 0.3) {
+        } else if (seed < 0.15) {
             return colours[2];
         }
 

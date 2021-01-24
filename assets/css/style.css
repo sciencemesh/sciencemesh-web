@@ -4,6 +4,7 @@ html {
     margin: 0;
     color: #454A54;
     font-weight: 500;
+    overflow-x: hidden;
 }
 
 section {
@@ -63,7 +64,8 @@ section h2 {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color:white;
+    
 }
 
 .bold-text {
