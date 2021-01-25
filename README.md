@@ -1,3 +1,3 @@
 # ScienceMesh Website
 
-![image](docs/logos/logo.png)
+![image](assets/images/seo-image.png)
