@@ -5,11 +5,11 @@ var scienceMeshLogo = (function () {
 
     var getColour = function () {
         var seed = Math.random();
-        if (seed < 0.05) {
+        if (seed < 0.08) {
             return colours[0];
-        } else if (seed < 0.1) {
+        } else if (seed < 0.12) {
             return colours[1];
-        } else if (seed < 0.15) {
+        } else if (seed < 0.16) {
             return colours[2];
         }
         return colours[3];
