@@ -11,16 +11,9 @@ section {
     padding: 1.5em 0;
 }
 
-
-section h2 {
-    text-align: center;
-}
-
 #sciencemesh {
-    width: 100%;
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
-    padding-top: 100px;
 }
 
 #remote-analysis-image,
@@ -33,39 +26,41 @@ section h2 {
     padding: 1em;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1F91CC;
+}
+
+.nav-link {
+    color: #1F91CC;
+}
 
 .hero-text {
     width: 50%;
-    position: absolute;
-    top: 130px;
-    left: 30px;
+    position: relative;
     z-index: 100;
+    top: 4px;
 }
 
 .anim-text {
     width: 50%;
+    bottom: 175px;
     position: absolute;
-    bottom: 100px;
-    left: 30px;
-    z-index: 100;
 }
 
 
 .hero-text h1 {
-    font-size: 1.7em;
+    /*font-size: 1.7em;*/
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 10px 0px;
+    /*margin: 10px 0px;*/
 }
 
 .hero-text p,
 .anim-text p {
-    font-size: 1.3em;
-    font-weight: 500;
-    line-height: 1.5em;
     margin: 0;
     padding: 0;
-    background-color:white;
-    
+    background-color: white;
+
 }
 
 .bold-text {
@@ -88,6 +83,13 @@ section h2 {
     text-align: center;
 }
 
+#top-background {
+    position: absolute;
+    width: 80vw;
+    height: 600px;
+    z-index: 0;
+    top: 100px;
+}
 
 #about,
 #features,
@@ -97,6 +99,10 @@ section h2 {
     min-height: 50vh;
     border-top: 2px solid #ecf0f1;
     background-color: white;
+}
+
+#features, #community{
+    background-color: #f8f9fa;
 }
 
 #services {
@@ -117,19 +123,6 @@ section h2 {
 
 #services .col-md-2 img {
     width: 70%;
-}
-
-#about h3,
-#features h3 {
-    text-align: center;
-    font-weight: 500;
-}
-
-#features p {
-    font-weight: 500;
-    text-align: center;
-    padding: 0 1em;
-    margin: 0;
 }
 
 a {
@@ -163,30 +156,11 @@ ul {
     align-content: center;
 }
 
-.nav-bar {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.9);
-}
 
 .logo {
     background: url('../svg/logo.svg') no-repeat;
-    width: 300px;
-    height: 100px;
-    margin-left: 20px;
-}
-
-.menu {
-    float: right;
-    padding: 40px;
-    font-weight: 500;
-    font-size: 1.2em;
-}
-
-.menu ul {
-    list-style: none;
+    width: 200px;
+    height: 70px;
 }
 
 .anchor-link {
@@ -200,22 +174,6 @@ ul {
 
 .hidden {
     opacity: 0;
-}
-
-.menu ul li {
-    display: inline;
-    padding: 5px;
-}
-
-.btn {
-    padding: 4px 6px !important;
-    background-color: white;
-    border: 2px solid #454A54;
-    text-decoration: none;
-    color: #1F91CC;
-    font-weight: bolder;
-    margin-right: 5px;
-    border-radius: 4px;
 }
 
 .btn.btn-primary {
@@ -233,7 +191,7 @@ ul {
     text-decoration: none;
 }
 
-polygon.cls-transferline {
+polygon.cls-transferline, polyline.cls-transferline {
     stroke-dasharray: 10;
     stroke-dashoffset: 1000;
     stroke: white;
@@ -276,7 +234,7 @@ polygon.cls-transferline {
     .anchor-link {
         display: none !important;
     }
-    
+
 
     #services {
         background-size: 70%;
@@ -287,25 +245,10 @@ polygon.cls-transferline {
         height: 80px;
     }
 
-    .nav-bar {
-        height: 80px;
-    }
-
-    .menu {
-        padding: 30px 20px;
-        font-size: 1em;
-    }
-
     .footer-resource-links {
         text-align: center;
     }
 
-    .hero-text {
-        width: 90%;
-        position: absolute;
-        top: 70px;
-        z-index: 100;
-    }
 
     .anim-text {
         width: 90%;
@@ -334,7 +277,6 @@ polygon.cls-transferline {
         padding: 2em;
     }
 
-    
 
     #services {
         background-size: 70%;
@@ -345,24 +287,8 @@ polygon.cls-transferline {
         height: 80px;
     }
 
-    .nav-bar {
-        height: 80px;
-    }
-
-    .menu {
-        padding: 30px 20px;
-        font-size: 1em;
-    }
-
     .footer-resource-links {
         text-align: center;
-    }
-
-    .hero-text {
-        width: 90%;
-        position: absolute;
-        top: 70px;
-        z-index: 100;
     }
 
     .anim-text {
@@ -381,12 +307,12 @@ polygon.cls-transferline {
     padding-top: 40px;
 }
 
-.generated-logo { 
+.generated-logo {
     width: 150px;
     min-height: 135px;
     display: inline-block;
     border-radius: 5px;
-    
+
     text-align: center;
     float: left;
     padding: 20px;

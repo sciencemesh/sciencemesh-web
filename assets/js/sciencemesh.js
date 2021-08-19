@@ -53,7 +53,7 @@ var scienceMesh = (function () {
 
     
     var loadBackground = function () {
-        var width = d3.select("#sciencemesh").node().offsetWidth;
+        var width = d3.select("#top-background").node().offsetWidth;
         // Check if image that needs to be loaded is different from the current image first.
         // Otherwise we'll let the browser resize the current image.
 
@@ -75,7 +75,7 @@ var scienceMesh = (function () {
         if(reload) {
             d3.xml(toLoad)
                 .then(function(data) {
-                    var container = d3.select("#sciencemesh");
+                    var container = d3.select("#top-background");
                     container.select('svg').remove();
                     container.node().append(data.documentElement);
 
@@ -86,8 +86,8 @@ var scienceMesh = (function () {
                     svg.selectAll(['.st0', '.st1', '.st2', '.st3', '.st4', '.st5', '.st6', '.st7', '.st8']).style('stroke', 'white').style('fill', 'white');
                     svg.selectAll(['.st-text-blue', '.st-text-grey']).style('opacity', 0);
 
-                    var meshes = ['#mesh-1', '#mesh-2', '#mesh-3', '#mesh-4', '#mesh-5'];
-                    var textMeshes = ['#text-mesh-1', '#text-mesh-2', '#text-mesh-3', '#text-mesh-4', '#text-mesh-5'];
+                    var meshes = ['#mesh-1'];
+                    var textMeshes = ['#text-mesh-1'];
 
                     svg.selectAll('.st0').style('fill', '#E6E6E6').style('opacity', 0).on("mouseover", mouseOver);
 
@@ -139,14 +139,7 @@ var scienceMesh = (function () {
 
                     d3.select('#within-domain-text').transition().delay(4500).duration(1000).style('opacity', 1);
 
-                    svg.selectAll('#mesh-linker path').transition().duration(1000).delay(9000).style('opacity', 1).style('stroke', '#E6E6E6')
-                    svg.selectAll('#text-linker path')
-                        .transition()
-                        .delay(9500)
-                        .duration(1000)
-                        .style('opacity', 1);
 
-                    d3.select('#across-domain-text').transition().delay(9500).duration(1000).style('opacity', 1);
                 });
         }
     }
@@ -167,6 +160,7 @@ var scienceMesh = (function () {
                     container.node().append(data.documentElement);
                 });
 
+
             d3.xml("assets/svg/icons/share-between-services.svg")
                 .then(function(data) {
                     var container = d3.select("#share-between-services-image");
@@ -176,6 +170,18 @@ var scienceMesh = (function () {
             d3.xml("assets/svg/icons/share-icon.svg")
                 .then(function(data){
                     var container = d3.select("#transfer-image");
+                    container.node().append(data.documentElement);
+                });
+
+             d3.xml("assets/svg/stakeholders/researcher.svg")
+                .then(function(data) {
+                    var container = d3.select("#developer-image");
+                    container.node().append(data.documentElement);
+                });
+
+            d3.xml("assets/svg/stakeholders/researcher.svg")
+                .then(function(data) {
+                    var container = d3.select("#researcher-image");
                     container.node().append(data.documentElement);
                 });
         },
