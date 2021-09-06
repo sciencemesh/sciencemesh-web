@@ -55,6 +55,10 @@ section {
     /*margin: 10px 0px;*/
 }
 
+#personas {
+    margin-top: 50px;
+}
+
 .hero-text p,
 .anim-text p {
     margin: 0;
