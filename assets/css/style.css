@@ -26,7 +26,7 @@ section {
     padding: 1em;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
     background-color: #1F91CC;
 }
@@ -89,7 +89,7 @@ section {
 
 #top-background {
     position: absolute;
-    width: 80vw;
+    width: 90vw;
     height: 600px;
     z-index: 0;
     top: 100px;
@@ -105,7 +105,7 @@ section {
     background-color: white;
 }
 
-#features, #community{
+#features, #community {
     background-color: #f8f9fa;
 }
 
@@ -220,57 +220,19 @@ polygon.cls-transferline, polyline.cls-transferline {
 }
 
 
-@media screen and (max-width: 600px) {
-
-    #remote-analysis-image,
-    #transfer-image,
-    #share-between-services-image,
-    #editing-image {
-        width: 40%;
-        margin: 0 auto;
-        padding: 1em;
-    }
-
-    .feature {
-        padding: 4em;
-    }
-
-    .anchor-link {
-        display: none !important;
-    }
-
-
-    #services {
-        background-size: 70%;
-    }
-
-    .logo {
-        width: 170px;
-        height: 80px;
-    }
-
-    .footer-resource-links {
-        text-align: center;
-    }
-
-
-    .anim-text {
-        width: 90%;
-        position: absolute;
-        bottom: 60px;
-        z-index: 100;
-    }
-}
-
 @media screen and (max-width: 992px) {
 
     #remote-analysis-image,
     #transfer-image,
     #share-between-services-image,
     #editing-image {
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
         padding: 1em;
+    }
+
+    #sciencemesh {
+        height: 75vh;
     }
 
     #sciencemesh svg {
@@ -301,7 +263,111 @@ polygon.cls-transferline, polyline.cls-transferline {
         bottom: 60px;
         z-index: 100;
     }
+
+    .hero-text {
+        width: 100%;
+        top: 20px;
+    }
+
+    #developer-image, #service-provider-image, #researcher-image, #sysadmin-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #top-background {
+        position: relative;
+        width: 90vw;
+        height: 398px;
+        z-index: 0;
+        top: -100px;
+    }
+
+    #personas {
+        margin-top: 0;
+    }
 }
+
+
+@media screen and (max-width: 600px) {
+
+    #remote-analysis-image,
+    #transfer-image,
+    #share-between-services-image,
+    #editing-image {
+        width: 50%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    #sciencemesh {
+        height: 42vh;
+        background-color: #454a54;
+        margin: -0.8em;
+        padding: 17px;
+        padding-top: 50px;
+        color: white;
+    }
+
+    #personas {
+        margin-top: 0px;
+    }
+
+    #top-background {
+        display: none;
+    }
+
+
+    .feature {
+        padding: 2em;
+    }
+
+    .anchor-link {
+        display: none !important;
+    }
+
+
+    #services {
+        background-size: 70%;
+    }
+
+    .logo {
+        width: 170px;
+        height: 80px;
+    }
+
+    .footer-resource-links {
+        text-align: center;
+    }
+
+
+    .anim-text {
+        width: 90%;
+        position: absolute;
+        bottom: 60px;
+        z-index: 100;
+    }
+
+    .hero-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-text p, .anim-text p {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    #developer-image, #service-provider-image, #researcher-image, #sysadmin-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #persona-break {
+        display: none;
+    }
+}
+
 
 #logo-template {
     display: none;
