@@ -58,9 +58,8 @@ var scienceMesh = (function () {
         // Otherwise we'll let the browser resize the current image.
 
         var toLoad = "assets/svg/sm-background.svg";
-        if (width <= 600) {
-            toLoad = "assets/svg/sm-background-mobile.svg";
-        } else if (width <= 900) {
+
+        if (width <= 900) {
             toLoad = "assets/svg/sm-background-medium.svg";
         }
 
@@ -175,13 +174,19 @@ var scienceMesh = (function () {
 
              d3.xml("assets/svg/stakeholders/researcher.svg")
                 .then(function(data) {
+                    var container = d3.select("#researcher-image");
+                    container.node().append(data.documentElement);
+                });
+
+             d3.xml("assets/svg/stakeholders/researcher.svg")
+                .then(function(data) {
                     var container = d3.select("#developer-image");
                     container.node().append(data.documentElement);
                 });
 
-            d3.xml("assets/svg/stakeholders/researcher.svg")
+            d3.xml("assets/svg/stakeholders/sys-admin.svg")
                 .then(function(data) {
-                    var container = d3.select("#researcher-image");
+                    var container = d3.select("#sysadmin-image");
                     container.node().append(data.documentElement);
                 });
         },
