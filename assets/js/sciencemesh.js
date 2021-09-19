@@ -200,7 +200,7 @@ var scienceMesh = (function () {
               .duration(400)
               .tween("scroll", (offset => () => {
                 var i = d3.interpolateNumber(offsetTop, offset);
-                return t => scrollTo(0, i(t)-50)
+                return t => scrollTo(0, i(t)-80)
               })(offsetTop + el.getBoundingClientRect().top));
           }
     }
