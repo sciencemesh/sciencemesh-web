@@ -56,7 +56,7 @@ section {
 }
 
 #personas {
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 .hero-text p,
@@ -89,10 +89,10 @@ section {
 
 #top-background {
     position: absolute;
-    width: 90vw;
+    width: 80vw;
     height: 600px;
     z-index: 0;
-    top: 100px;
+    top: 70px;
 }
 
 #about,
@@ -300,7 +300,7 @@ polygon.cls-transferline, polyline.cls-transferline {
     }
 
     #sciencemesh {
-        height: 42vh;
+        height: 47vh;
         background-color: #454a54;
         margin: -0.8em;
         padding: 17px;
