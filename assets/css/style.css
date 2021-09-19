@@ -89,8 +89,9 @@ section {
 
 #top-background {
     position: absolute;
-    width: 80vw;
-    height: 600px;
+    width: 90vw;
+    height: 660px;
+    overflow-y: hidden;
     z-index: 0;
     top: 70px;
 }
