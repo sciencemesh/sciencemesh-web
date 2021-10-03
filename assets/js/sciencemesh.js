@@ -53,9 +53,10 @@ var scienceMesh = (function () {
 
     
     var loadBackground = function () {
-        var width = d3.select("#top-background").node().offsetWidth;
+        var width = d3.select("#top-background").node().getBoundingClientRect().width;
         // Check if image that needs to be loaded is different from the current image first.
         // Otherwise we'll let the browser resize the current image.
+        console.log('Width is ' + width);
 
         var toLoad = "assets/svg/sm-background.svg";
 
