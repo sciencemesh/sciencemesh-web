@@ -12,7 +12,8 @@ section {
 }
 
 #sciencemesh {
-    height: 50vh;
+    height: 60vh;
+    min-height: 660px;
     overflow: hidden;
 }
 
@@ -102,9 +103,13 @@ section {
 #services,
 #status,
 #community {
-    min-height: 50vh;
+    min-height: 450px;
     border-top: 2px solid #ecf0f1;
     background-color: white;
+}
+
+#features {
+    min-height: 400px;
 }
 
 #features, #community {
@@ -233,14 +238,6 @@ polygon.cls-transferline, polyline.cls-transferline {
         padding: 1em;
     }
 
-    #sciencemesh {
-        height: 75vh;
-    }
-
-    #sciencemesh svg {
-        margin-top: 50px;
-    }
-
     .feature {
         padding: 2em;
     }
@@ -278,10 +275,10 @@ polygon.cls-transferline, polyline.cls-transferline {
 
     #top-background {
         position: relative;
-        width: 90vw;
+        width: 100%;
         height: 398px;
         z-index: 0;
-        top: -100px;
+        top: 0px;
     }
 
     #personas {
@@ -302,7 +299,7 @@ polygon.cls-transferline, polyline.cls-transferline {
     }
 
     #sciencemesh {
-        height: 47vh;
+        min-height: 400px;
         background-color: #454a54;
         margin: -0.8em;
         padding: 17px;
