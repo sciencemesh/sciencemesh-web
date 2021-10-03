@@ -147,9 +147,9 @@
                              aria-labelledby="pills-developer-tab">
                             <div class="row">
 
-                                <div class="col-md-3 col-sm-6 center-align" id="developer-image">
+                                <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="developer-image">
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-9 col-sm-6 col-xs-6">
                                     <p class="lead">
                                         Developers can allow their applications to work in <span
                                             class="bold-text">Science<span class="blue-text">Mesh</span></span> so that
@@ -174,9 +174,9 @@
                              aria-labelledby="pills-sysadmin-tab">
                             <div class="row">
 
-                                <div class="col-md-3 col-sm-6 center-align" id="sysadmin-image">
+                                <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="sysadmin-image">
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-9 col-sm-6 col-xs-6">
 
                                     <p class="lead bold-text">
                                         It is important to ensure inter-operability that the sites are able to talk to
@@ -213,10 +213,10 @@
                         <div class="tab-pane fade" id="pills-sp" role="tabpanel" aria-labelledby="pills-sp-tab">
                             <div class="row">
 
-                                <div class="col-md-3 col-sm-6 center-align" id="service-provider-image">
+                                <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="service-provider-image">
                                     <img src="assets/svg/stakeholders/service-provider.svg" width="70%">
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-9 col-sm-6 col-xs-6">
                                     <p class="lead">Integrate your services to work with <span class="bold-text">Science<span
                                             class="blue-text">Mesh</span></span>.</p>
 
@@ -232,10 +232,10 @@
                              aria-labelledby="pills-researcher-tab">
                             <div class="row">
 
-                                <div class="col-md-3 col-sm-6" id="researcher-image">
+                                <div class="col-md-3 col-sm-6 col-xs-6" id="researcher-image">
 
                                 </div>
-                                <div class="col-md-9">
+                                <div class="col-md-9 col-sm-6 col-xs-6">
                                     <p class="lead">Seamlessly <span class="bold-text">analyse data</span> anywhere in
                                         <span
                                                 class="bold-text">Science<span class="blue-text">Mesh</span></span> in a
@@ -458,6 +458,9 @@
 <script src="assets/js/sciencemesh.js" type="text/javascript"></script>
 <script type="text/javascript">
     scienceMesh.initialise();
+    d3.selectAll('.navbar-nav a').on('click', function () {
+        d3.select('.navbar-collapse').classed('show', false);
+    });
 </script>
 
 <script type='application/ld+json'>
