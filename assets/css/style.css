@@ -12,7 +12,7 @@ section {
 }
 
 #sciencemesh {
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -89,7 +89,8 @@ section {
 
 #top-background {
     position: absolute;
-    width: 90vw;
+    width: 100%;
+    max-width: 1320px;
     height: 660px;
     overflow-y: hidden;
     z-index: 0;
