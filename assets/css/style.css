@@ -100,7 +100,7 @@ section {
 
 #about,
 #features,
-#services,
+#technologies,
 #status,
 #community {
     min-height: 450px;
@@ -116,7 +116,7 @@ section {
     background-color: #f8f9fa;
 }
 
-#services {
+#technologies {
     background-image: url('../svg/grey-abstract-bg.svg');
     background-position: top right;
     background-size: 40%;
@@ -132,7 +132,7 @@ section {
 
 }
 
-#services .col-md-2 img {
+#technologies .col-md-2 img {
     width: 70%;
 }
 
@@ -187,9 +187,13 @@ ul {
     opacity: 0;
 }
 
+.btn {
+    margin-right: 3px;
+}
+
 .btn.btn-primary {
     background-color: #1F91CC;
-    border: 2px solid #1F91CC;
+    border: 1px solid #1F91CC;
     color: white;
 }
 
@@ -243,7 +247,7 @@ polygon.cls-transferline, polyline.cls-transferline {
     }
 
 
-    #services {
+    #technologies {
         background-size: 70%;
     }
 
@@ -325,7 +329,7 @@ polygon.cls-transferline, polyline.cls-transferline {
     }
 
 
-    #services {
+    #technologies {
         background-size: 70%;
     }
 
