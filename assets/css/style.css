@@ -120,6 +120,15 @@ section {
     background-image: url('../svg/grey-abstract-bg.svg');
     background-position: top right;
     background-size: 40%;
+
+    background-repeat: no-repeat;
+
+}
+
+#status {
+    background-image: url('../svg/grey-abstract-bg.svg');
+    background-position: top right;
+    background-size: 30%;
     background-repeat: no-repeat;
 
 }
@@ -189,6 +198,18 @@ ul {
 
 .btn {
     margin-right: 3px;
+}
+
+.big-number {
+    font-size: 6em;
+    color: #1F91CC;
+    padding:0;
+    margin: 0;
+}
+
+.big-number-info {
+    text-transform: uppercase;
+    margin-top: -30px;
 }
 
 .btn.btn-primary {
