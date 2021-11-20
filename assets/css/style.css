@@ -212,6 +212,9 @@ ul {
     margin-top: -30px;
 }
 
+.tab-content {
+    min-height: 400px;
+}
 .btn.btn-primary {
     background-color: #1F91CC;
     border: 1px solid #1F91CC;
