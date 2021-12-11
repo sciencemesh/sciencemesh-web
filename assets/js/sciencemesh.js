@@ -179,7 +179,7 @@ var scienceMesh = (function () {
                     container.node().append(data.documentElement);
                 });
 
-             d3.xml("assets/svg/stakeholders/researcher.svg")
+             d3.xml("assets/svg/stakeholders/developer.svg")
                 .then(function(data) {
                     var container = d3.select("#developer-image");
                     container.node().append(data.documentElement);

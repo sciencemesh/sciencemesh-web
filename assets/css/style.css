@@ -57,6 +57,7 @@ section {
 }
 
 #personas {
+    border-top: #e6e6e6 solid 2px;
     margin-top: 5px;
 }
 
@@ -112,7 +113,7 @@ section {
     min-height: 400px;
 }
 
-#features, #community {
+#personas, #technologies, #status{
     background-color: #f8f9fa;
 }
 
@@ -120,9 +121,7 @@ section {
     background-image: url('../svg/grey-abstract-bg.svg');
     background-position: top right;
     background-size: 40%;
-
     background-repeat: no-repeat;
-
 }
 
 #status {
@@ -433,4 +432,40 @@ polygon.cls-transferline, polyline.cls-transferline {
     transition: all 0.5s;
     color: #1F91CC;
     cursor: pointer;
+}
+
+.btn-dark {
+    background-color: #243548;
+}
+
+.stakeholder-list-item {
+    padding: 10px;
+    border-left: #e6e6e6 4px solid;
+    margin: 10px 10px;
+}
+
+.stakeholder-list-item:hover{
+    transition: all 0.5s;
+    border-left: #1f91cc 4px solid;
+    background-color: white;
+    cursor: default;
+}
+
+.stakeholder-list-item p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.font-lighter {
+    font-weight: 300;
+}
+
+.font-smaller {
+    font-size: 1.1em;
 }

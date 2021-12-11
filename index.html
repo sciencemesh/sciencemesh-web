@@ -48,6 +48,13 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
+
+
+                <li class="nav-item">
+                    <a href="#personas" class="nav-link" onclick="scienceMesh.scrollToElement('personas')">Using
+                        ScienceMesh</a>
+                </li>
+
                 <li class="nav-item">
                     <a href="#features" class="nav-link" onclick="scienceMesh.scrollToElement('features')">Features</a>
                 </li>
@@ -82,17 +89,17 @@
 
 <div class="container">
 
-    <section id="sciencemesh" style="margin-top: 85px;">
+    <section id="sciencemesh" style="margin-top: 90px;">
         <div id="top-background"></div>
         <div class="hero-text">
             <h2 class="text-left">
                 Unlock scientific collaboration through technology.
             </h2>
-            <p class="lead"><span class="bold-text">Science<span class="blue-text">Mesh</span></span> is the
+            <p class="lead font-lighter"><span class="bold-text">Science<span class="blue-text">Mesh</span></span> is the
                 <span class="bold-text">Federated Science Cloud Mesh</span> that connects existing
                 and heterogeneous sites in a transparent way.</p>
             <br/>
-            <p class="lead">It is a rich
+            <p class="lead font-lighter">It is a rich
                 ecosystem
                 for frictionless scientific collaboration and access to research services where <span id="data-text"
                                                                                                       class="hidden grey-text bold-text">data,</span>
@@ -107,163 +114,192 @@
 
     </section>
 
-    <section id="personas">
-        <div class="container">
-            <hr id="persona-break"/>
-            <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    <br/>
-                    <p class="lead text-center">Whether you are developer, service provider, or research, we have
-                        the information you need to get started with <span class="bold-text">Science<span
-                                class="blue-text">Mesh</span></span>.</p>
-                </div>
+
+</div>
+
+<section id="personas">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h2 class="text-center">
+                    Using <span class="bold-text">Science<span
+                        class="blue-text">Mesh</span></span>
+                </h2>
+            </div>
+        </div>
+        <br/>
+
+        <div class="row">
+
+            <div class="col-md-12 col-xs-12">
+                <br/>
+                <p class="lead text-center">Whether you are developer, service provider, or researcher, we have
+                    the information and resources you need to get started.</p>
+            </div>
 
 
-                <div class="col-md-12">
-                    <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-developer-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-developer" type="button" role="tab"
-                                    aria-controls="pills-developer"
-                                    aria-selected="true">Developer
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-sp-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-sp" type="button" role="tab" aria-controls="pills-sp"
-                                    aria-selected="false">Service Provider
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-researcher-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-researcher" type="button" role="tab"
-                                    aria-controls="pills-researcher"
-                                    aria-selected="false">Researcher
-                            </button>
-                        </li>
-                    </ul>
-                    <br/><br/>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-developer" role="tabpanel"
-                             aria-labelledby="pills-developer-tab">
-                            <div class="row">
+            <div class="col-md-12">
 
-                                <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="developer-image">
-                                </div>
-                                <div class="col-md-9 col-sm-6 col-xs-6">
-                                    <p class="lead">
-                                        Develop once, deploy anywhere - thanks to the <span
-                                            class="bold-text">Science<span class="blue-text">Mesh</span></span>
-                                        Interoperability
-                                        Platform, you will be able to develop productivity and research applications
-                                        which can be deployed on mesh nodes regardless of the vendor backend they are
-                                        using
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-developer-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-developer" type="button" role="tab"
+                                aria-controls="pills-developer"
+                                aria-selected="true">Developer
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-sp-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-sp" type="button" role="tab" aria-controls="pills-sp"
+                                aria-selected="false">Service Provider
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-researcher-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-researcher" type="button" role="tab"
+                                aria-controls="pills-researcher"
+                                aria-selected="false">Researcher
+                        </button>
+                    </li>
+                </ul>
+                <br/><br/>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-developer" role="tabpanel"
+                         aria-labelledby="pills-developer-tab">
+                        <div class="row">
 
-                                    </p>
+                            <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="developer-image">
+                            </div>
+                            <div class="col-md-9 col-sm-6 col-xs-6">
+                                <h4>Develop once, Deploy anywhere</h4>
+                                <br/>
+                                <p class="lead">
+                                     Thanks to the <span
+                                        class="bold-text">Science<span class="blue-text">Mesh</span></span>
+                                    Interoperability
+                                    Platform, you will be able to develop productivity and research applications
+                                    which can be deployed on mesh nodes regardless of the vendor backend they are
+                                    using
 
-                                    <p class="lead">
-                                        Expose your applications to a virtually limitless and diverse user base
-                                    </p>
+                                </p>
 
-                                    <p class="lead">
-                                        Join a vibrant community of research-oriented applications aimed at unlocking
-                                        the full potential of world wide collaboration
-                                    </p>
+                                <div class="stakeholder-list-item"><p class="lead">
+                                    Expose your applications to a virtually limitless and diverse user base
+                                </p></div>
 
+                                <div class="stakeholder-list-item"><p class="lead">
+                                    Join a vibrant community of research-oriented applications aimed at unlocking
+                                    the full potential of world wide collaboration
+                                </p></div>
 
-                                    <p>
+                                <br/>
+                                <p>
 
-                                        <a href="https://developer.sciencemesh.io/docs/examples/" target="_new"
-                                           class="btn btn-dark">View/Contribute to the Code Base</a>
+                                    <a href="https://developer.sciencemesh.io/docs/examples/" target="_new"
+                                       class="btn btn-dark">View/Contribute to the Code Base</a>
 
-                                        <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
-                                           target="_new"
-                                           class="btn btn-dark">Join in the Discussion</a>
-                                        <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
-                                           target="_new"
-                                           class="btn btn-primary">Integrate Your Application</a>
-                                    </p>
-                                </div>
+                                    <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
+                                       target="_new"
+                                       class="btn btn-dark">Join in the Discussion</a>
+                                    <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
+                                       target="_new"
+                                       class="btn btn-primary">Integrate Your Application</a>
+                                </p>
+                            </div>
 
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-sp" role="tabpanel" aria-labelledby="pills-sp-tab">
+                        <div class="row">
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="service-provider-image">
+                                <img src="assets/svg/stakeholders/service-provider.svg">
+                            </div>
+                            <div class="col-md-9 col-sm-6 col-xs-6">
+
+                                <h4>Deploy Science<span class="blue-text">Mesh</span> in your Organisation</h4>
+                                <br/>
+
+                                <p class="lead">
+                                    Empower your researchers with <span class="bold-text">Science<span class="blue-text">Mesh</span></span>:
+                                </p>
+
+                                <div class="stakeholder-list-item"><p class="lead">Easily set up a service based on pre-packaged Open Source
+                                    software.</p></div>
+                                <div class="stakeholder-list-item"><p class="lead">Allow your users to communicate, share and collaborate with the
+                                    thousands of researchers on other nodes</p></div>
+                                <div class="stakeholder-list-item"><p class="lead">Provide your own applications and services based on an open platform
+                                    with global reach. Expose it to a virtually limitless and diverse user base</p></div>
+                                <br/>
+                                <p>
+                                    <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
+                                       target="_new"
+                                       class="btn btn-dark">View Available Applications</a>
+                                    <a href="https://developer.sciencemesh.io/docs/examples/" target="_new"
+                                       class="btn btn-dark">Observe the Mesh Live</a>
+
+                                    <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
+                                       target="_new"
+                                       class="btn btn-primary">Deploy ScienceMesh</a>
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-researcher" role="tabpanel"
+                         aria-labelledby="pills-researcher-tab">
+                        <div class="row">
 
-                        <div class="tab-pane fade" id="pills-sp" role="tabpanel" aria-labelledby="pills-sp-tab">
-                            <div class="row">
+                            <div class="col-md-3 col-sm-12 col-xs-12" id="researcher-image"></div>
+                            <div class="col-md-9 col-sm-12 col-xs-12">
+                                <h4>Research Sharing, Analysis, Collaboration, and Management</h4>
+                                <br/>
+                                <p class="lead">
+                                    <span class="bold-text">Science<span class="blue-text">Mesh</span></span> provides the research environment in which to:
+                                </p>
+                                <div class="stakeholder-list-item"><p class="lead">Share files with researchers on other
+                                    mesh nodes.</p></div>
 
-                                <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="service-provider-image">
-                                    <img src="assets/svg/stakeholders/service-provider.svg" width="70%">
-                                </div>
-                                <div class="col-md-9 col-sm-6 col-xs-6">
-                                    <p class="lead">Easily set up a service based on pre-packaged Open Source
-                                        software.</p>
-                                    <p class="lead">Allow your users to communicate, share and collaborate with the
-                                        thousands of researchers on other nodes</p>
-                                    <p class="lead">Provide your own applications and services based on an open platform
-                                        with global reach. Expose it to a virtually limitless and diverse user base</p>
-                                    <p>
-                                        <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
-                                           target="_new"
-                                           class="btn btn-dark">View Available Applications</a>
-                                        <a href="https://developer.sciencemesh.io/docs/examples/" target="_new"
-                                           class="btn btn-dark">Observe the Mesh Live</a>
+                                <div class="stakeholder-list-item"><p class="lead">Collaborate with researchers through rich applications (e.g. notebook and
+                                    document editing).</p></div>
+                                <div class="stakeholder-list-item"><p class="lead">Manage your research data, make it <strong>FAIR</strong> and publish
+                                    it on digital
+                                    repositories (e.g. <a href="https://inveniosoftware.org/products/rdm/"
+                                                          target="_blank">InvenioRDM</a>/<a
+                                            href="https://zenodo.org/" target="_blank">Zenodo</a>)</p></div>
+                                <div class="stakeholder-list-item"><p class="lead">
+                                    Easily start point-to-point data transfers of large data files (using RClone or
+                                    FTS/Rucio).
+                                </p></div>
 
-                                        <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
-                                           target="_new"
-                                           class="btn btn-primary">Deploy ScienceMesh</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-researcher" role="tabpanel"
-                             aria-labelledby="pills-researcher-tab">
-                            <div class="row">
+                                <div class="stakeholder-list-item"><p class="lead">Join a dynamic world wide community where you can easily collaborate
+                                    and exchange research objects and documents.</p></div>
 
-                                <div class="col-md-3 col-sm-6 col-xs-6" id="researcher-image">
+                                <br/>
+                                <p>
+                                    <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
+                                       target="_new"
+                                       class="btn btn-dark">View Available Applications</a>
 
-                                </div>
-                                <div class="col-md-9 col-sm-6 col-xs-6">
-                                    <p class="lead">Share files with researchers on other mesh nodes.</p>
-
-                                    <p class="lead">Collaborate with them through rich applications (e.g. notebook and
-                                        document editing).</p>
-                                    <p class="lead">Manage your research data, make it <strong>FAIR</strong> and publish
-                                        it on digital
-                                        repositories (e.g. <a href="https://inveniosoftware.org/products/rdm/"
-                                                              target="_blank">InvenioRDM</a>/<a
-                                                href="https://zenodo.org/" target="_blank">Zenodo</a>)</p>
-                                    <p class="lead">
-                                        Easily start point-to-point data transfers of large data files (using RClone or
-                                        FTS/Rucio).
-                                    </p>
-
-                                    <p class="lead">Join a dynamic world wide community where you can easily collaborate
-                                        and exchange research objects and documents.</p>
-
-                                    <p>
-                                        <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
-                                           target="_new"
-                                           class="btn btn-dark">View Available Applications</a>
-
-                                        <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
-                                           target="_new"
-                                           class="btn btn-dark">Observe the Mesh Live</a>
-                                        <a href="https://developer.sciencemesh.io/docs/examples/" target="_new"
-                                           class="btn btn-dark">Discuss ScienceMesh</a>
-                                        <a href="" target="_new" class="btn btn-primary">
-                                            Join ScienceMesh
-                                        </a>
-                                    </p>
-                                </div>
+                                    <a href="https://developer.sciencemesh.io/docs/how-to-join-sciencemesh/"
+                                       target="_new"
+                                       class="btn btn-dark">Observe the Mesh Live</a>
+                                    <a href="https://developer.sciencemesh.io/docs/examples/" target="_new"
+                                       class="btn btn-dark">Discuss ScienceMesh</a>
+                                    <a href="" target="_new" class="btn btn-primary">
+                                        Join ScienceMesh
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 <section id="features">
     <div class="container">
@@ -334,7 +370,7 @@
                     <a href="https://reva.link/" target="_new">Reva</a> is the foundation software for the
                     ScienceMesh platform.
                 </h4>
-                <p class="lead">
+                <p class="lead font-lighter font-smaller">
                     <a href="https://reva.link/" target="_new">Reva</a> is an inter-operability platform originally
                     developed at CERN to bridge the gap between cloud storages and application providers. Reva is
                     used every day at CERN to power the <a href="https://cernbox.web.cern.ch/cernbox/"
@@ -345,9 +381,10 @@
 
                 <img src="assets/svg/services/ocm.png" style="max-height: 120px; padding: 20px">
                 <h4>
-                    <a href="https://github.com/cs3org/OCM-API" target="_new">OCM</a> is the mechanism to stablish trust between sites.
+                    <a href="https://github.com/cs3org/OCM-API" target="_new">OCM</a> is the mechanism to stablish trust
+                    between sites.
                 </h4>
-                <p class="lead">
+                <p class="lead font-lighter font-smaller">
                     <a href="https://github.com/cs3org/OCM-API" target="_new">OpenCloudMesh</a> connects globally
                     interconnected mesh of research cloud
                     without sacrificing any of the advantages in privacy, control and security an on-premises cloud
@@ -359,10 +396,11 @@
 
                 <img src="assets/svg/services/cs3org.png" style="max-height: 120px; padding: 20px">
                 <h4>
-                    <a href="https://github.com/cs3org/cs3apis" target="_new">CS3APIs</a> provide a common interface for applications and storage to
+                    <a href="https://github.com/cs3org/cs3apis" target="_new">CS3APIs</a> provide a common interface for
+                    applications and storage to
                     communicate.
                 </h4>
-                <p class="lead">
+                <p class="lead font-lighter font-smaller">
                     It is the cornerstone of the application ecosystem which sits on top of the <span
                         class="bold-text">Science<span class="blue-text">Mesh</span></span>.
                 </p>
