@@ -327,7 +327,8 @@ polygon.cls-transferline, polyline.cls-transferline {
 
     #sciencemesh {
         min-height: 400px;
-        background-color: #454a54;
+
+        background: #454a54 url("../svg/grey-abstract-bg.svg") bottom right;
         margin: -0.8em;
         padding: 17px;
         padding-top: 50px;
@@ -402,6 +403,10 @@ polygon.cls-transferline, polyline.cls-transferline {
     .row {
         width: 95%;
         margin: 0 auto;
+    }
+
+    .nav-item {
+        margin-bottom: 5px;
     }
 }
 
