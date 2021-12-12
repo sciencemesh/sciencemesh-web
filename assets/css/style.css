@@ -392,6 +392,12 @@ polygon.cls-transferline, polyline.cls-transferline {
     #persona-break {
         display: none;
     }
+
+    #pills-tabContent .btn {
+        clear: both;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 
