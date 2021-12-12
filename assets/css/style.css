@@ -398,6 +398,11 @@ polygon.cls-transferline, polyline.cls-transferline {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    .row {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 
