@@ -200,7 +200,7 @@ ul {
 }
 
 .big-number {
-    font-size: 6em;
+    font-size: 4.5em;
     color: #1F91CC;
     padding:0;
     margin: 0;
@@ -407,6 +407,10 @@ polygon.cls-transferline, polyline.cls-transferline {
 
     .nav-item {
         margin-bottom: 5px;
+    }
+
+    #data-text {
+        color: white;
     }
 }
 
