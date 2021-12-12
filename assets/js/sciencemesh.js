@@ -184,12 +184,6 @@ var scienceMesh = (function () {
                     var container = d3.select("#developer-image");
                     container.node().append(data.documentElement);
                 });
-
-            d3.xml("assets/svg/stakeholders/sys-admin.svg")
-                .then(function(data) {
-                    var container = d3.select("#sysadmin-image");
-                    container.node().append(data.documentElement);
-                });
         },
 
         scrollToElement: function (id) {
