@@ -25,6 +25,8 @@
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/vve2cqc.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -113,6 +115,14 @@
             <br/>
         </div>
 
+        <div class="scroll-hint hidden" onclick="scienceMesh.scrollToElement('personas')">
+            <!-- If the personas div is not visible, this marker will show to scroll down-->
+
+            <div id="arrow">
+                <p>View Use Cases</p><span></span>
+            </div>
+        </div>
+
     </section>
 
 
@@ -140,7 +150,7 @@
             </div>
 
 
-            <div class="col-md-12">
+            <div id="persona-tabs" class="col-md-12">
 
                 <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -173,7 +183,7 @@
                             <div class="col-md-3 col-sm-6 col-xs-6 center-align" id="developer-image">
                             </div>
                             <div class="col-md-9 col-sm-6 col-xs-6">
-                                <h4>Develop once, Deploy anywhere</h4>
+                                <h4>Develop once, Deploy anywhere <a href="#persona-developer" class="anchor-link-persona"><span class="material-icons md-18">link</span></a></h4>
                                 <br/>
                                 <p class="lead">
                                     Thanks to the <span
@@ -220,7 +230,7 @@
                             </div>
                             <div class="col-md-9 col-sm-6 col-xs-6">
 
-                                <h4>Deploy Science<span class="blue-text">Mesh</span> in your Organisation</h4>
+                                <h4>Deploy Science<span class="blue-text">Mesh</span> in your Organisation <a href="#persona-service-provider" class="anchor-link-persona"><span class="material-icons md-18">link</span></a></h4>
                                 <br/>
 
                                 <p class="lead">
@@ -259,7 +269,7 @@
 
                             <div class="col-md-3 col-sm-12 col-xs-12" id="researcher-image"></div>
                             <div class="col-md-9 col-sm-12 col-xs-12">
-                                <h4>Research Sharing, Analysis, Collaboration, and Management</h4>
+                                <h4>Research Sharing, Analysis, Collaboration, and Management <a href="#persona-researcher" class="anchor-link-persona"><span class="material-icons md-18">link</span></a></h4>
                                 <br/>
                                 <p class="lead">
                                     <span class="bold-text">Science<span class="blue-text">Mesh</span></span> provides
