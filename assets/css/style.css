@@ -113,7 +113,7 @@ section {
     min-height: 400px;
 }
 
-#personas, #technologies, #status{
+#personas, #technologies, #status {
     background-color: #f8f9fa;
 }
 
@@ -202,7 +202,7 @@ ul {
 .big-number {
     font-size: 4.5em;
     color: #1F91CC;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
@@ -214,6 +214,7 @@ ul {
 .tab-content {
     min-height: 400px;
 }
+
 .btn.btn-primary {
     background-color: #1F91CC;
     border: 1px solid #1F91CC;
@@ -464,7 +465,7 @@ polygon.cls-transferline, polyline.cls-transferline {
     margin: 10px 10px;
 }
 
-.stakeholder-list-item:hover{
+.stakeholder-list-item:hover {
     transition: all 0.5s;
     border-left: #1f91cc 4px solid;
     background-color: white;
@@ -489,3 +490,79 @@ polygon.cls-transferline, polyline.cls-transferline {
 .font-smaller {
     font-size: 1.1em;
 }
+
+/*Scroll Hint*/
+.scroll-hint {
+
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: #454A54;
+    font-weight: bolder;
+    width: 200px;
+    margin: 0 auto;
+    transform: translate(-50%, -10%);
+    cursor: pointer;
+}
+
+.scroll-hint:hover {
+    background-color: #ecf0f1;
+    transition: 0.5s all;
+}
+
+.scroll-hint p {
+    margin-bottom: 1.6em
+}
+
+#arrow span {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 4px solid #1f91cc;
+    border-bottom: 4px solid #1f91cc;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+.anchor-link-persona {
+    color: #95a5a6;
+}
+
+.anchor-link-persona:hover {
+    color: #1f91cc;
+    transition: 0.3s all;
+}
+

@@ -41,7 +41,6 @@ var sciencemeshDashboard = (function () {
                     dataset.push({'value': +d.value[1], 'name': d.metric.site})
                     totalUsers += +d.value[1];
                 });
-                console.log(totalUsers);
                 d3.select('#total-users').text(d3.format('.2s')(totalUsers));
                 renderBarChart('#users-breakdown', dataset);
             })

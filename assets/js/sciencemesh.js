@@ -1,7 +1,7 @@
 var scienceMesh = (function () {
-     
+
     var svg;
-    var colourToType = { "#1F91CC": "applications", "#454A54": "data", "#bdc3c7": "compute", "#FFFFFF": "tile" };
+    var colourToType = {"#1F91CC": "applications", "#454A54": "data", "#bdc3c7": "compute", "#FFFFFF": "tile"};
     var colours = Object.keys(colourToType);
     var rtime;
     var timeout = false;
@@ -51,12 +51,9 @@ var scienceMesh = (function () {
         }
     });
 
-    
+
     var loadBackground = function () {
         var width = d3.select("#top-background").node().getBoundingClientRect().width;
-        // Check if image that needs to be loaded is different from the current image first.
-        // Otherwise we'll let the browser resize the current image.
-        console.log('Width is ' + width);
 
         var toLoad = "assets/svg/sm-background.svg";
 
@@ -71,10 +68,10 @@ var scienceMesh = (function () {
             reload = false;
         }
 
-        
-        if(reload) {
+
+        if (reload) {
             d3.xml(toLoad)
-                .then(function(data) {
+                .then(function (data) {
                     var container = d3.select("#top-background");
                     container.select('svg').remove();
                     container.node().append(data.documentElement);
@@ -148,55 +145,94 @@ var scienceMesh = (function () {
         initialise: function () {
 
             loadBackground();
+
+            // Show scroll button if next div is not visible on current page
+            const personasVisible = document.getElementById('personas');
+            if (!scienceMesh.elementIsVisible(personasVisible)) {
+                // Set position
+                d3.select('.scroll-hint').classed('hidden', false)
+                    .style('top', d3.select('#sciencemesh').node().getBoundingClientRect().height - 10);
+            }
+
+            // Check URL to show the correct tab when for instance #personas#developer is shown.
+
+            if (window.location.href.indexOf('#persona-') > -1) {
+                const mapping = {
+                    'persona-developer': '#pills-developer-tab',
+                    'persona-service-provider': '#pills-sp-tab',
+                    'persona-researcher': '#pills-researcher-tab'
+                }
+
+                scienceMesh.scrollToElement('personas');
+
+                try {
+                    const persona = window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
+                    var triggerEl = document.querySelector('#pills-tab ' + mapping[persona])
+                    new bootstrap.Tab(triggerEl).show()
+                } catch(err) {
+                    console.error('Unable to recognise persona.')
+                }
+            }
+
+            // Attach call back to
+
+
             d3.xml("assets/svg/icons/editing.svg")
-                .then(function(data) {
+                .then(function (data) {
                     var container = d3.select("#editing-image");
                     container.node().append(data.documentElement);
                 });
 
             d3.xml("assets/svg/icons/remote-analysis.svg")
-                .then(function(data) {
+                .then(function (data) {
                     var container = d3.select("#remote-analysis-image");
                     container.node().append(data.documentElement);
                 });
 
 
             d3.xml("assets/svg/icons/share-between-services.svg")
-                .then(function(data) {
+                .then(function (data) {
                     var container = d3.select("#share-between-services-image");
                     container.node().append(data.documentElement);
                 });
 
             d3.xml("assets/svg/icons/share-icon.svg")
-                .then(function(data){
+                .then(function (data) {
                     var container = d3.select("#transfer-image");
                     container.node().append(data.documentElement);
                 });
 
-             d3.xml("assets/svg/stakeholders/researcher.svg")
-                .then(function(data) {
+            d3.xml("assets/svg/stakeholders/researcher.svg")
+                .then(function (data) {
                     var container = d3.select("#researcher-image");
                     container.node().append(data.documentElement);
                 });
 
-             d3.xml("assets/svg/stakeholders/developer.svg")
-                .then(function(data) {
+            d3.xml("assets/svg/stakeholders/developer.svg")
+                .then(function (data) {
                     var container = d3.select("#developer-image");
                     container.node().append(data.documentElement);
                 });
         },
 
+        elementIsVisible: function (elem) {
+            var rect = elem.getBoundingClientRect();
+            return (
+                (rect.top + 50) <= (window.innerHeight)
+            );
+        },
+
         scrollToElement: function (id) {
             var el = document.getElementById(id)
-    
+
             var offsetTop = window.pageYOffset || document.documentElement.scrollTop;
             d3.transition()
-              .delay(0)
-              .duration(400)
-              .tween("scroll", (offset => () => {
-                var i = d3.interpolateNumber(offsetTop, offset);
-                return t => scrollTo(0, i(t)-80)
-              })(offsetTop + el.getBoundingClientRect().top));
-          }
+                .delay(0)
+                .duration(400)
+                .tween("scroll", (offset => () => {
+                    var i = d3.interpolateNumber(offsetTop, offset);
+                    return t => scrollTo(0, i(t) - 80)
+                })(offsetTop + el.getBoundingClientRect().top));
+        }
     }
 })();
