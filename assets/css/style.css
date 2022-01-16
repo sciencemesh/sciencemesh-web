@@ -27,6 +27,15 @@ section {
     padding: 1em;
 }
 
+a {
+    color: #1f91cc;
+}
+
+.nav-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
     background-color: #1F91CC;
@@ -103,6 +112,7 @@ section {
 #features,
 #technologies,
 #status,
+#catalogue,
 #community {
     min-height: 450px;
     border-top: 2px solid #ecf0f1;
@@ -113,14 +123,14 @@ section {
     min-height: 400px;
 }
 
-#personas, #technologies, #status {
+#personas, #technologies, #status, #catalogue {
     background-color: #f8f9fa;
 }
 
 #technologies {
     background-image: url('../svg/grey-abstract-bg.svg');
     background-position: top right;
-    background-size: 40%;
+    background-size: 30%;
     background-repeat: no-repeat;
 }
 
@@ -134,8 +144,8 @@ section {
 
 #community {
     background-image: url('../svg/grey-abstract-bg-left.svg');
-    background-position: top left;
-    background-size: 40%;
+    background-position: bottom left;
+    background-size: 30%;
     background-repeat: no-repeat;
 
 }
@@ -557,12 +567,23 @@ polygon.cls-transferline, polyline.cls-transferline {
     }
 }
 
-.anchor-link-persona {
-    color: #95a5a6;
+.catalogue-item {
+    background-color: white;
+    color: #454A54;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 10px;
 }
 
-.anchor-link-persona:hover {
-    color: #1f91cc;
-    transition: 0.3s all;
+.catalogue-item h4 {
+    font-weight: bolder;
 }
 
+.catalogue-item .description {
+    color: #7f8c8d;
+
+}
+.catalogue-list-item {
+    margin-bottom: 7px;
+}
