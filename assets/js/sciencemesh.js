@@ -154,6 +154,11 @@ var scienceMesh = (function () {
                     .style('top', d3.select('#sciencemesh').node().getBoundingClientRect().height - 10);
             }
 
+            d3.selectAll('.nav-link').on('click', (d) => {
+                const _href = d3.select(d.target).property('href');
+                window.history.pushState("", "", _href);
+            })
+
             // Check URL to show the correct tab when for instance #personas#developer is shown.
 
             if (window.location.href.indexOf('#persona-') > -1) {
