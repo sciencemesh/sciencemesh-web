@@ -66,7 +66,7 @@ var sciencemeshDashboard = (function () {
                 const projection = d3.geoMercator().center([12, 49]).scale(900).translate([width / 2, height / 2]);
 
 
-                d3.json('/assets/data/world.geojson').then(function (geo) {
+                d3.json('assets/data/world.geojson').then(function (geo) {
                     let svg = d3.select('#map').append('svg').attr('width', width).attr('height', height);
                     let g = svg.append('g').attr('class', 'container');
 
